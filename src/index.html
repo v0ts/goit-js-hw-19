@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="modal is-hidden">
+        <form class="form">
+          <button type="button" class="form-close">close</button>
+          <ul class="form-list">
+            <li class="form-item">
+              <label for="title" class="form-label">Films title: </label
+              ><input type="text" class="form-input" name="title" required />
+            </li>
+            <li class="form-item">
+              <label for="genre" class="form-label">Films genre: </label
+              ><input type="text" class="form-input" name="genre" required />
+            </li>
+            <li class="form-item">
+              <label for="director" class="form-label">Films director: </label
+              ><input type="text" class="form-input" name="director" required />
+            </li>
+            <li class="form-item">
+              <label for="year" class="form-label">Films year: </label
+              ><input type="text" class="form-input" name="year" required />
+            </li>
+          </ul>
+          <button type="submit" class="form-submit">Submit film</button>
+        </form>
+      </div>
+      <div class="edit-modal is-hidden">
+        <form class="edit-form">
+          <button type="button" class="edit-close">close</button>
+          <ul class="edit-list">
+            <li class="edit-item">
+              <label for="title" class="edit-label">Title: </label
+              ><input type="text" name="title" class="edit-title" />
+            </li>
+            <li class="edit-item">
+              <label for="genre" class="edit-label">Genre: </label
+              ><input type="text" name="genre" class="edit-genre" />
+            </li>
+            <li class="edit-item">
+              <label for="director" class="edit-label">Director: </label
+              ><input type="text" name="director" class="edit-director" />
+            </li>
+            <li class="edit-item">
+              <label for="year" class="edit-label">Year: </label
+              ><input type="text" name="year" class="edit-year" />
+            </li>
+          </ul>
+          <button type="submit" class="edit-submit">submit</button>
+        </form>
+      </div>
+      <section class="get-films">
+        <!-- <button class="get-all-films">Get all films</button> -->
+        <button class="add-film">add film</button>
+        <ul class="get-films-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

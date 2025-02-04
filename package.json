@@ -1,0 +1,30 @@
+{
+  "name": "goit-js-hw-18",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server movies.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v0ts/goit-js-hw-18.git"
+  },
+  "keywords": [],
+  "author": "VoTs <cybulskij2011@ukr.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v0ts/goit-js-hw-18/issues"
+  },
+  "homepage": "https://github.com/v0ts/goit-js-hw-18#readme",
+  "description": "",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.3",
+    "parcel": "^2.13.3"
+  }
+}

@@ -1,0 +1,89 @@
+body {
+  background-color: lightgrey;
+}
+
+.modal,
+.edit-modal {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.get-films-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  gap: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-list {
+  list-style: none;
+}
+
+.form-item {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.form-label {
+  width: 100px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.edit-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-label {
+  width: 65px;
+}
